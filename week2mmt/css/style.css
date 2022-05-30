@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----- basics ------ */
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    
+}
+p{
+    font-weight: 500;
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;;
+}
+h2{
+    font-size: 30px;
+}
+.page p{
+    padding: 15px;
+}
+h2.links{
+    width: 350px;
+    text-align: left;
+    margin: auto;
+    overflow:hidden;
+    padding: auto;
+}
+
+/* ------ hoofdpagina ------ */
+#left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    height: 100vh;
+    width: 30vw;
+    text-align: left;
+    transition: 2000ms ease all;
+    overflow: hidden;
+}
+
+#left img{
+    height: 280px;
+    width: 213px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    margin: 20px 20px 40px ;
+    padding: 10px 10px 20px;
+}
+
+#top{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("../img/TOPTEST.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 70vw;
+    height: 50vh;
+
+}
+#bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/BOTTEST.png");
+    background-size: 100%;
+    width: 70vw;
+    height: 50vh;
+}
+
+.intro{
+    width: 350px;
+    height: 270px;
+    text-align: left;
+    margin: auto;
+    overflow:hidden;
+    padding: 10px 10px 20px;
+}
+.intro:after {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;  
+    left: 0;
+    height: 60%;
+    width: 100%;
+    content: "";
+    background: linear-gradient(to top,
+       rgb(0, 0, 0) 10%, 
+       rgba(255,255,255, 0) 80%);
+    
+}
+.titel{
+    width: 536px;
+    position: absolute;
+    margin: 10px auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.streep{
+    width: 4px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    background-color: white;
+}
+#streepB{
+    bottom: 0 !important;
+}
+#streepT{
+    top: 0;
+}
+.thumb{
+    transition: 2000ms ease all;
+}
+.thumb h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+.thumb h4{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+/* ------- knop -------- */
+a{
+    color: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+p#kp{
+    font-size: 18px;
+    font-weight: 700;
+}
+.knopjeL{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 43px;
+    width: 184px;
+    line-height: 43px;
+}
+.knopje{
+    text-decoration: none;
+    line-height: 43px;
+    padding: auto;
+    height: 43px;
+    width: 146px;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+
+/*   ------- fullscreen ----- */
+.thumb.page{
+    width: 100vw !important;
+    height: 100vh !important;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: inherit; */
+    z-index: 5!important;
+
+}
+
+
+
+/* ------ pages ----- */
+#lets, #immersive, #discover{
+    background-color: black
+}
+
+
+#topfotolets{
+    background-image: url("../img/TOPTEST.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 515px;
+    width: 100vw;
+    text-align: center;
+
+}
+#topfotoimmersive{
+    background-image: url("../img/BOTTEST.png");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 515px;
+    width: 100vw;
+    text-align: center;
+}
+.text{
+    width: 535px;
+    text-align: left;
+    position: relative;
+    margin: 30px auto 50px;
+}
+img.midFoto{
+    margin: 20px auto;
+    padding: 20px auto;
+}
